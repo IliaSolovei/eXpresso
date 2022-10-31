@@ -87,6 +87,7 @@ kotlin {
     }
     tasks.register<FatFrameworkTask>("fatDebugFramework") {
         baseName = "sharedTests"
+        group = "build"
         // The default destination directory is "<build directory>/fat-framework".
 //    destinationDir = buildDir.resolve("fat-framework/debug")
         from(

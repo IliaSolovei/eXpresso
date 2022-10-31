@@ -19,8 +19,6 @@
 		C1B229E324297D580038C011 /* sharedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B229E224297D580038C011 /* sharedTests.framework */; };
 		C1B229E424297D610038C011 /* sharedTests.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = C1B229E224297D580038C011 /* sharedTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1B229E62429980F0038C011 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B229E52429980F0038C011 /* ContributorsView.swift */; };
-		C1E5C37B24B7B1980050E663 /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E5C37A24B7B1980050E663 /* GCDWebServers.framework */; };
-		C1E5C37C24B7B2100050E663 /* GCDWebServers.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = C1E5C37A24B7B1980050E663 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1FD72F924D2D0B300A1012D /* NativeTestBase in Frameworks */ = {isa = PBXBuildFile; productRef = C1FD72F824D2D0B300A1012D /* NativeTestBase */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C1E5C37C24B7B2100050E663 /* GCDWebServers.framework in Copy Files */,
 				C1B229E424297D610038C011 /* sharedTests.framework in Copy Files */,
 			);
 			name = "Copy Files";
@@ -65,7 +62,6 @@
 		C157091323EF4E37003481FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B229E224297D580038C011 /* sharedTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sharedTests.framework; path = "../sample-sharedTests/build/fat-framework/sharedTests.framework"; sourceTree = "<group>"; };
 		C1B229E52429980F0038C011 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
-		C1E5C37A24B7B1980050E663 /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = ../Carthage/Build/iOS/GCDWebServers.framework; sourceTree = "<group>"; };
 		C1E7FC7223F3448900B11BA3 /* SampleiOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = SampleiOS.xctestplan; path = SampleiOS.xcodeproj/SampleiOS.xctestplan; sourceTree = "<group>"; };
 		C1FD72F724D2C80F00A1012D /* NativeTestBase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeTestBase; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FD72F924D2D0B300A1012D /* NativeTestBase in Frameworks */,
-				C1E5C37B24B7B1980050E663 /* GCDWebServers.framework in Frameworks */,
 				C1B229E324297D580038C011 /* sharedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +144,6 @@
 		C157091A23EF604F003481FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1E5C37A24B7B1980050E663 /* GCDWebServers.framework */,
 				C1B229E224297D580038C011 /* sharedTests.framework */,
 			);
 			name = Frameworks;

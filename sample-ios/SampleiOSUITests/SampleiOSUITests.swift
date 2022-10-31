@@ -7,6 +7,6 @@ final class SampleiOSUITests: DelegatingTestBase {
     override class func testClass() -> AnyClass { TestListBehavior.self }
 }
 
-final class ContributorsUITests: DelegatingTestBase {
-    override class func testClass() -> AnyClass { TestContributorsView.self }
-}
+//final class ContributorsUITests: DelegatingTestBase {
+//    override class func testClass() -> AnyClass { TestContributorsView.self }
+//}
