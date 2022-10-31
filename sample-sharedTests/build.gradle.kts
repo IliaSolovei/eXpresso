@@ -41,7 +41,7 @@ kotlin {
             embedBitcode("disable")
 
             transitiveExport = true
-            export(project(":eXpresso"))
+            export(project(":eXpresso-core"))
         }
     }
 
@@ -50,7 +50,7 @@ kotlin {
             dependencies {
                 implementation(kotlin("test"))
                 implementation(kotlin("test-annotations-common"))
-                api(project(":eXpresso"))
+                api(project(":eXpresso-core"))
             }
         }
 
@@ -70,9 +70,6 @@ kotlin {
                 iosArm64Main
             ).forEach {
                 it.dependsOn(this)
-            }
-            dependencies {
-                api(project(":eXpresso"))
             }
         }
 
