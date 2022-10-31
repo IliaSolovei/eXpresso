@@ -23,13 +23,6 @@ android {
         }
     }
     buildToolsVersion = "31.0.0"
-
-//    sourceSets {
-//        getByName("main") {
-//            java.srcDirs("src/androidMain/kotlin")
-//            res.srcDirs("src/androidMain/res")
-//        }
-//    }
 }
 
 kotlin {
@@ -79,7 +72,6 @@ kotlin {
                 it.dependsOn(this)
             }
             dependencies {
-//                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0")
                 api(project(":eXpresso"))
             }
         }

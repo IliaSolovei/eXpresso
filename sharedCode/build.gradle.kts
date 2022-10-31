@@ -2,7 +2,6 @@
 //apply(from = rootProject.file("gradle/publish.gradle"))
 plugins {
     kotlin("multiplatform")
-//    `maven-publish`
     id("com.android.library")
 }
 
@@ -12,8 +11,6 @@ android {
     defaultConfig {
         minSdk = 24
         targetSdk = 33
-//        versionCode = 1
-//        versionName = "1.0"
     }
     buildTypes {
         getByName("release") {
@@ -25,13 +22,6 @@ android {
         }
     }
     buildToolsVersion = "31.0.0"
-
-    sourceSets {
-        getByName("main") {
-            java.srcDirs("src/androidMain/kotlin")
-            res.srcDirs("src/androidMain/res")
-        }
-    }
 }
 
 kotlin {
@@ -48,17 +38,10 @@ kotlin {
         }
         it.compilations.getByName("main") {
             cinterops {
-                val xctest by creating {
-//                        // xctest_*.def require Xcode or symlink to be at /Applications/Xcode.app
-//                        defFile = project(file("src/iosMain/xctest_${targetArchitecture}.def"))
-//                    }
-            }
+                val xctest by creating
         }
     }
         android()
-//        fromPreset(presets.android, "android") {
-//            publishLibraryVariants("release", "debug")
-//        }
     }
 
     sourceSets {
@@ -92,9 +75,6 @@ kotlin {
                 iosX64Main
             ).forEach {
                 it.dependsOn(this)
-            }
-            dependencies {
-//                implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.6.4")
             }
         }
     }

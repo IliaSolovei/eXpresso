@@ -15,20 +15,9 @@ buildscript {
     }
 }
 
-//plugins {
-//    id("pl.allegro.tech.build.axion-release") version "1.12.0"
-//}
-
-//scmVersion {
-//    tag {
-//        prefix = ""
-//    }
-//}
-
 allprojects {
 
     group = "dev.eSolovei.eXpresso"
-//    version = scmVersion.version
 
     repositories {
         mavenCentral()
@@ -37,7 +26,7 @@ allprojects {
     }
 }
 
-//task clean(type: Delete) {
-//    delete rootProject.buildDir
-//}
+tasks.register("clean", Delete::class) {
+    delete(rootProject.buildDir)
+}
 
