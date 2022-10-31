@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks
+package dev.eSolovei.eXpresso
 
 import android.view.View
 import androidx.test.espresso.Espresso.onView

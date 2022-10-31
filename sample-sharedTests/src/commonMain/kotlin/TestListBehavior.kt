@@ -1,6 +1,6 @@
-package dev.michallaskowski.kuiks.sample.sharedTests
+package dev.eSolovei.eXpresso.sample.sharedTests
 
-import dev.michallaskowski.kuiks.ApplicationWrapper
+import dev.eSolovei.eXpresso.ApplicationWrapper
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 

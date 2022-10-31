@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks
+package dev.eSolovei.eXpresso
 
 import platform.XCTest.*
 import platform.Foundation.*

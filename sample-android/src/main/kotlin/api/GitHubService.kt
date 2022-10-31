@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks.sample.android.api
+package dev.eSolovei.eXpresso.sample.android.api
 
 import io.reactivex.Single
 import retrofit2.http.GET

@@ -1,26 +1,29 @@
-package dev.michallaskowski.kuiks.sample.android
+package dev.eSolovei.eXpresso.sample.android
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_main.*
+import dev.eSolovei.eXpresso.sample.android.databinding.ActivityMainBinding
+import dev.eSolovei.eXpresso.sample.android.databinding.ContentMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var mainBinding: ActivityMainBinding
+    private lateinit var contentMainBinding: ContentMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
-
-        show_list_button.setOnClickListener {
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        contentMainBinding = mainBinding.includedContentMain
+        val viewRoot = mainBinding.root
+        setContentView(viewRoot)
+        setSupportActionBar(mainBinding.toolbar)
+        contentMainBinding.showListButton.setOnClickListener {
             val goToListIntent = Intent(this, ListActivity::class.java)
             startActivity(goToListIntent)
         }
-        show_contributors.setOnClickListener {
+        contentMainBinding.showContributors.setOnClickListener {
             val goToContributorsIntent = Intent(this, ContributionList::class.java)
             goToContributorsIntent.putExtras(intent)
             startActivity(goToContributorsIntent)

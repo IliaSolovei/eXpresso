@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks
+package dev.eSolovei.eXpresso
 
 import android.content.Intent
 import android.view.View

@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks.sample.android.api
+package dev.eSolovei.eXpresso.sample.android.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

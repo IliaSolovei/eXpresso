@@ -1,4 +1,4 @@
-import dev.michallaskowski.kuiks.sample.sharedTests.TestListBehavior
+import dev.eSolovei.eXpresso.sample.sharedTests.TestListBehavior
 import junit.framework.JUnit4TestAdapter
 import junit.framework.TestSuite
 import org.junit.runner.RunWith
@@ -14,7 +14,7 @@ class TestsFactoryTests {
         @JvmStatic
         fun suite(): TestSuite {
             val testSuite = TestSuite()
-            val testClasses = listOf(TestListBehavior::class, ContributorsTests::class)
+            val testClasses = listOf(TestListBehavior::class, )//ContributorsTests::class)
             testClasses.forEach {
                 testSuite.addTest(JUnit4TestAdapter(it.java))
             }

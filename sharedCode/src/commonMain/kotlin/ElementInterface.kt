@@ -1,4 +1,4 @@
-package dev.michallaskowski.kuiks
+package dev.eSolovei.eXpresso
 
 interface AppElement {
     fun tap()

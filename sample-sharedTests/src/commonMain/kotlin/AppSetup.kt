@@ -1,7 +1,7 @@
-package dev.michallaskowski.kuiks.sample.sharedTests
+package dev.eSolovei.eXpresso.sample.sharedTests
 
-import dev.michallaskowski.kuiks.Platform
-import dev.michallaskowski.kuiks.platform
+import dev.eSolovei.eXpresso.Platform
+import dev.eSolovei.eXpresso.platform
 
 object AppSetup {
     val identifier: String
